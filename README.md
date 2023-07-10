@@ -26,13 +26,13 @@
 # 运行方式
 1. 打开抖音App
 2. 进入关注的人页面/近期互动最少的人页面
-3. Mac连接Android手机
+3. 电脑通过USB连接Android手机
 4. 在Android手机上启用「开发者模式」：一般位于 设置 > 关于手机 > 软件信息 > 版本号，连续点按版本号七次，会提示已成功开启开发者选项
 5. 在Android手机上打开「高级设置」-「开发者选项」-「USB调试开关」
 6. 在手机弹出的弹窗中确认开启调试开关并信任当前主机
-7. 在Mac上打开“终端”；Windows打开“命令提示符”）
+7. 在Mac上打开“终端”；或在Windows打开“命令提示符”：Windows键+R > 输入"cmd" > 回车
 8. 进入本工程的根目录：在“终端”或“命令提示符”窗口中输入“cd + 空格”，然后把工程目录用鼠标拖进窗口中，再点击回车即可
-9. 执行 `python3 unfollow.py`
+9. 输入`python3 unfollow.py`，回车
 
 # 打赏
 <img src="./WeChat_QR_Code.jpg" alt="WeChat_QR_Code" height="400px" />
