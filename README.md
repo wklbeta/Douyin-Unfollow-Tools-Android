@@ -1,6 +1,12 @@
 # Douyin-Unfollow-Tools-Android
 抖音自动取关自动化Python脚本
 
+# 特点
+- 代码精简，纯本地操作，隐私无忧
+- 通过adb获取布局识别取关按钮在页面中的位置，非常精准
+- 兼容有直播头像时获取不到布局的情况
+- 兼容近期互动最少的人页面可能出现“假的加载到底”的情况
+
 # 环境要求
 - 电脑要求：Mac
 - 手机要求：Android
@@ -25,3 +31,6 @@
 5. 在Android手机上打开「高级设置」-「开发者选项」-「USB调试开关」
 6. 在手机弹出的弹窗中确认开启调试开关并信任当前主机
 7. 在Mac上打开“终端”，进入本工程的根目录，执行 `python3 unfollow.py`
+
+# 打赏
+<img src="./WeChat_QR_Code.jpg" alt="WeChat_QR_Code" height="400px" />
