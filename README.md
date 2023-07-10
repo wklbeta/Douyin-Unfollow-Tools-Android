@@ -32,7 +32,7 @@
 6. 在手机弹出的弹窗中确认开启调试开关并信任当前主机
 7. 在Mac上打开“终端”；或在Windows打开“命令提示符”：Windows键+R > 输入"cmd" > 回车
 8. 进入本工程的根目录：在“终端”或“命令提示符”窗口中输入“cd + 空格”，然后把工程目录用鼠标拖进窗口中，再点击回车即可
-9. 输入`python3 unfollow.py`，回车
+9. 在“终端”或“命令提示符”窗口中输入`python3 unfollow.py`，回车
 
 # 打赏
 <img src="./WeChat_QR_Code.jpg" alt="WeChat_QR_Code" height="400px" />
