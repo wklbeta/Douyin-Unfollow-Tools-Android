@@ -8,11 +8,11 @@
 - 兼容近期互动最少的人页面可能出现“假的加载到底”的情况
 
 # 环境要求
-- 电脑要求：Mac
+- 操作系统支持：Windows/Mac/Linux
 - 手机要求：Android
-- 测试通过抖音Android版本：26.0.0(260001)
+- 测试通过的抖音Android版本：26.0.0(260001)，其他版本不保证成功，有问题可以提issue
 - 需要安装 [adb](https://developer.android.com/studio/releases/platform-tools?hl=zh-cn) 并放置到环境目录下
-- 需要安装 Python3 并放置 python3 到环境目录下（Mac已自带）
+- 需要安装 Python3 并放置 python3 到环境目录下（Mac已自带，Windows需[手动安装](https://www.python.org/downloads/windows/)）
 
 # 支持取关的页面
 1. 近期互动最少的人页面
@@ -30,7 +30,9 @@
 4. 在Android手机上启用「开发者模式」：一般位于 设置 > 关于手机 > 软件信息 > 版本号，连续点按版本号七次，会提示已成功开启开发者选项
 5. 在Android手机上打开「高级设置」-「开发者选项」-「USB调试开关」
 6. 在手机弹出的弹窗中确认开启调试开关并信任当前主机
-7. 在Mac上打开“终端”，进入本工程的根目录，执行 `python3 unfollow.py`
+7. 在Mac上打开“终端”；Windows打开“命令提示符”）
+8. 进入本工程的根目录：在“终端”或“命令提示符”窗口中输入“cd + 空格”，然后把工程目录用鼠标拖进窗口中，再点击回车即可
+9. 执行 `python3 unfollow.py`
 
 # 打赏
 <img src="./WeChat_QR_Code.jpg" alt="WeChat_QR_Code" height="400px" />
