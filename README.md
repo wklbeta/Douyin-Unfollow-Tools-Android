@@ -1,5 +1,5 @@
 # Douyin-Unfollow-Tools-Android
-抖音自动取关自动化Python脚本
+抖音自动取消关注Python脚本
 
 # 特点
 - 代码精简，纯本地操作，隐私无忧
