@@ -5,10 +5,10 @@ import os
 
 # 定义要查找的节点标签和属性值
 node_tag = "node"
+followed_btn_class = "android.widget.Button"
 uiautomator_file_name = "window_dump.xml"
-follow_btn_id = "com.ss.android.ugc.aweme:id/wqa"
-unfollow_btn_id = "com.ss.android.ugc.aweme:id/bpl"
-list_container_id = "com.ss.android.ugc.aweme:id/l8"
+unfollow_btn_content_desc = "已关注，按钮"
+list_container_class = "androidx.recyclerview.widget.RecyclerView"
 
 
 def click_by_text(xml_path, text):
@@ -37,15 +37,18 @@ def find_node_bounds(xml_path):
     btn_bounds_center_list = []
     list_container_bounds = []
     for elem in root.iter(node_tag):
+        node = elem.find("node")
         if (
-            follow_btn_id in elem.attrib.get("resource-id", "")
-            and elem.find("node").attrib["text"] == "已关注"
-            or unfollow_btn_id in elem.attrib.get("resource-id", "")
+            node is not None
+            and node.attrib["text"] == "已关注"
+            and node.attrib["class"] == followed_btn_class
+        ) or (
+            unfollow_btn_content_desc in elem.attrib.get("content-desc", "")
             and elem.attrib["text"] == "取消关注"
         ):
             bounds = elem.attrib.get("bounds", "")
             btn_bounds_center_list.append(bounds_str_to_center(bounds))
-        if list_container_id in elem.attrib.get("resource-id", ""):
+        if list_container_class in elem.attrib.get("class", ""):
             list_container_bounds = get_bounds(elem.attrib.get("bounds", ""))
 
     return btn_bounds_center_list, list_container_bounds
