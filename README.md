@@ -10,7 +10,7 @@
 # 环境要求
 - 操作系统支持：Windows/Mac/Linux
 - 手机要求：Android
-- 测试通过的抖音Android版本：26.0.0(260001)，其他版本不保证成功，有问题可以提issue
+- 测试通过的抖音Android版本：26.0.x, 26.1.x
 - 需要安装 [adb](https://developer.android.com/studio/releases/platform-tools?hl=zh-cn) 并放置到环境目录下
 - 需要安装 Python3 并放置 python3 到环境目录下（Mac已自带，Windows需[手动安装](https://www.python.org/downloads/windows/)）
 
